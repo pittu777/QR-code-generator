@@ -37,7 +37,7 @@ function App() {
         onChange={handleInputChange}
         placeholder="Enter text or URL"
       />
-      {qrCodeError && <p className="error">Data too long....</p>}
+      {qrCodeError && <p className="error">Data is too long....</p>}
       {!qrCodeError && input && (
         <div ref={qrCodeRef}>
           <QRCode value={input} />

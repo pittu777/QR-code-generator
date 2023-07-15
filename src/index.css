@@ -1,4 +1,4 @@
-body{
+body {
   background-color: steelblue;
 }
 
@@ -14,7 +14,8 @@ input {
   border: 2px solid #ba2222;
   transition: border-color 0.3s ease-in-out;
 }
-input:hover{
+
+input:hover {
   border-color: #999;
 }
 
@@ -22,19 +23,23 @@ h1 {
   margin-bottom: 30px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-button{
+
+button {
   background-color: white;
   color: black;
-  margin: 10px 10px 10px 10px;
+  margin: 10px;
+  padding: 5px 10px;
   cursor: pointer;
+  border: none;
   border-radius: 5px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
-button:hover{
+
+button:hover {
   background-color: black;
   color: white;
 }
+
 .error {
-  color: red;
+  color: wheat;
 }
-
-

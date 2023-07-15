@@ -1,5 +1,7 @@
 # Getting Started with Create React App
 
+<a href="https://qr-code-generator-liart-eight.vercel.app/?vercelToolbarCode=rJain8NEWdqwDjV">live here</a>
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

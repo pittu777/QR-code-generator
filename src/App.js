@@ -7,10 +7,13 @@ function App() {
   const [qrCodeError, setQrCodeError] = useState(false);
   const qrCodeRef = useRef();
 
+  console.log(input);
+
   const handleInputChange = (event) => {
+    
     // to handle error
     const inputValue = event.target.value;
-    if (inputValue.length <= 255) {
+    if (inputValue.length <= 500) {
       setInput(inputValue);
       setQrCodeError(false);
     } else {
@@ -37,14 +40,14 @@ function App() {
         onChange={handleInputChange}
         placeholder="Enter text or URL"
       />
-      {qrCodeError && <p className="error">Data is too long....</p>}
+      {qrCodeError && <h4 className="error">Data is too long....</h4>}
       {!qrCodeError && input && (
         <div ref={qrCodeRef}>
           <QRCode value={input} />
         </div>
       )}
       {!qrCodeError && input && (
-        <button onClick={handleDownloadClick}>Download</button>
+        <button onClick={handleDownloadClick}>Download QR</button>
       )}
     </div>
   );
